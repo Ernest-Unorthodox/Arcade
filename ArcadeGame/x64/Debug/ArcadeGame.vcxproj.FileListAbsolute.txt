@@ -1,1 +1,2 @@
 C:\Projects\ArcadeGame\x64\Debug\ArcadeGame.exe
+C:\Repos\Arcade\ArcadeGame\x64\Debug\ArcadeGame.exe

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Projects\ArcadeGame\x64\Release\ArcadeGame.exe</FullPath>
+      <FullPath>C:\Repos\Arcade\ArcadeGame\x64\Release\ArcadeGame.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,7 +1,7 @@
 ﻿  ArcadeGame.cpp
   Generating code
-  1 of 4 functions (25.0%) were compiled, the rest were copied from previous compilation.
+  4 of 4 functions (100.0%) were compiled.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  ArcadeGame.vcxproj -> C:\Projects\ArcadeGame\x64\Release\ArcadeGame.exe
+  ArcadeGame.vcxproj -> C:\Repos\Arcade\ArcadeGame\x64\Release\ArcadeGame.exe
