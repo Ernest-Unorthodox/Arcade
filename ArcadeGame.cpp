@@ -12,12 +12,35 @@ class GameWindow {
         int screenHeight = 500;
         sf::RenderWindow window; 
 
-        WindowSize() {
+        WindowSize(){
             // Create SFML window
             sf::RenderWindow window(sf::VideoMode(screenWidth, screenHeight), "Game Window");
             window.setFramerateLimit(60);
             WindowActive = true;
+
+            while (WindowActive == true && window.isOpen()) {
+               
+                sf::Event event;
+                while (window.pollEvent(event))
+                {
+                    if (event.type == sf::Event::Closed)
+                        window.close();
+                }
+
+                // Clear window
+                window.clear();
+
+                // Draw test object to window
+                window.draw(testShape);
+
+                // End current frame
+                window.display();
+
+
+            }
         };
+
+
 
     private:
         struct PredefinedShapes {
@@ -29,31 +52,17 @@ class GameWindow {
             }
         };
         bool WindowActive = false;
-    };
+        PredefinedShapes* Shapes; 
+    }; //end of WindowSize struct
+
+private:
+
+
 };
+
 
 int main()
 {
-
-    // Run program while window is oopen
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        // Clear window
-        window.clear();
-
-        // Draw test object to window
-        window.draw(testShape);
-
-        // End current frame
-        window.display();
-    }
 
     return 0;
 }
